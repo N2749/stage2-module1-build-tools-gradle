@@ -5,7 +5,7 @@ public class StringUtils {
         //code!
         try {
             return Double.parseDouble(str) > 0;
-        } catch (NumberFormatException e) {
+        } catch (NumberFormatException | NullPointerException e) {
             return false;
         }
     }
